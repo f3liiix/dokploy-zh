@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dokploy 简体中文汉化
 // @namespace    https://github.com/dokploy/dokploy
-// @version      0.1.21
+// @version      0.1.22
 // @description  汉化 Dokploy v0.30.2 面板，基于官方源码提交 772b76821771c53b072c2fbb95cf8876e1a65ae4
 // @author       f3liiix
 // @homepageURL  https://github.com/f3liiix/dokploy-zh
@@ -17386,6 +17386,16 @@
 		return true;
 	}
 
+	function collapseRedundantTotal(node) {
+		if (compact(node.nodeValue || "") !== "total") return false;
+		const previous = nearestSiblingText(node, "previousSibling");
+		if (!/(?:个服务|个环境)$/u.test(previous)) return false;
+		trackTextNode(node);
+		markSelfMutation(node);
+		node.nodeValue = "";
+		return true;
+	}
+
 	function trackAdjacentPluralSuffix(node) {
 		const value = compact(node.nodeValue || "");
 		if (!/(?:个服务|个环境)$/u.test(value)) return;
@@ -17422,7 +17432,7 @@
 		const parent = node.parentElement;
 		if (!parent || (checkContext && parent.closest(SKIP_TEXT_SELECTOR))) return;
 		const original = node.nodeValue || "";
-		if (collapsePluralSuffix(node)) return;
+		if (collapsePluralSuffix(node) || collapseRedundantTotal(node)) return;
 		if (!original.trim()) {
 			collapseChineseSeparator(node);
 			return;
