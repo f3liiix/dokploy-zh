@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dokploy 简体中文汉化
 // @namespace    https://github.com/dokploy/dokploy
-// @version      0.1.18
+// @version      0.1.19
 // @description  汉化 Dokploy v0.30.2 面板，基于官方源码提交 772b76821771c53b072c2fbb95cf8876e1a65ae4
 // @author       f3liiix
 // @homepageURL  https://github.com/f3liiix/dokploy-zh
@@ -17380,6 +17380,38 @@
 		}
 	}
 
+	function collapsePluralSuffix(node) {
+		if (compact(node.nodeValue || "") !== "s") return false;
+		const previous = nearestSiblingText(node, "previousSibling");
+		if (!/(?:个服务|个环境)$/u.test(previous)) return false;
+		trackTextNode(node);
+		markSelfMutation(node);
+		node.nodeValue = "";
+		return true;
+	}
+
+	function trackAdjacentPluralSuffix(node) {
+		const value = compact(node.nodeValue || "");
+		if (!/(?:个服务|个环境)$/u.test(value)) return;
+		let sibling = node.nextSibling;
+		while (sibling) {
+			if (sibling.nodeType === Node.COMMENT_NODE) {
+				sibling = sibling.nextSibling;
+				continue;
+			}
+			if (sibling.nodeType !== Node.TEXT_NODE) return;
+			const suffix = compact(sibling.nodeValue || "");
+			if (suffix === "" || suffix === "s") {
+				trackTextNode(sibling);
+				if (suffix === "s") collapsePluralSuffix(sibling);
+				if (suffix === "s") return;
+				sibling = sibling.nextSibling;
+				continue;
+			}
+			return;
+		}
+	}
+
 	function collapseAdjacentChineseSeparators(node) {
 		for (const direction of ["previousSibling", "nextSibling"]) {
 			let sibling = node[direction];
@@ -17394,6 +17426,7 @@
 		const parent = node.parentElement;
 		if (!parent || (checkContext && parent.closest(SKIP_TEXT_SELECTOR))) return;
 		const original = node.nodeValue || "";
+		if (collapsePluralSuffix(node)) return;
 		if (!original.trim()) {
 			collapseChineseSeparator(node);
 			return;
@@ -17411,6 +17444,7 @@
 		else untrackTextNode(node);
 		markSelfMutation(node);
 		node.nodeValue = boundary[1] + translated + boundary[3];
+		trackAdjacentPluralSuffix(node);
 		collapseAdjacentChineseSeparators(node);
 	}
 
