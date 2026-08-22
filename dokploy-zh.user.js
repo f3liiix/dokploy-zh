@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dokploy 简体中文汉化
 // @namespace    https://github.com/dokploy/dokploy
-// @version      0.1.19
+// @version      0.1.20
 // @description  汉化 Dokploy v0.30.2 面板，基于官方源码提交 772b76821771c53b072c2fbb95cf8876e1a65ae4
 // @author       f3liiix
 // @homepageURL  https://github.com/f3liiix/dokploy-zh
@@ -11159,10 +11159,6 @@
 	[
 		"Rate Limiting",
 		"速率限制"
-	],
-	[
-		"Raw",
-		"原始内容"
 	],
 	[
 		"RClone Installed",
