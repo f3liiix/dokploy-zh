@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Dokploy 简体中文汉化
 // @namespace    https://github.com/dokploy/dokploy
-// @version      0.1.20
+// @version      0.1.21
 // @description  汉化 Dokploy v0.30.2 面板，基于官方源码提交 772b76821771c53b072c2fbb95cf8876e1a65ae4
 // @author       f3liiix
 // @homepageURL  https://github.com/f3liiix/dokploy-zh
@@ -558,7 +558,7 @@
 	],
 	[
 		"Add and edit S3 destinations",
-		"添加和编辑 S3 存储目标"
+		"添加和编辑 S3 存储"
 	],
 	[
 		"Add and edit volumes and mounts",
@@ -11594,7 +11594,7 @@
 	],
 	[
 		"Remove S3 destinations",
-		"移除 S3 存储目标"
+		"移除 S3 存储"
 	],
 	[
 		"Remove SCIM provider",
@@ -12054,7 +12054,7 @@
 	],
 	[
 		"S3 Destinations",
-		"S3 存储目标"
+		"S3 存储"
 	],
 	[
 		"SAML provider registered successfully",
