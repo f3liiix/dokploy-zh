@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Dokploy 简体中文汉化
-// @namespace    https://github.com/dokploy/dokploy
+// @namespace    https://github.com/f3liiix/dokploy-zh
 // @version      0.1.22
 // @description  汉化 Dokploy v0.30.2 面板，基于官方源码提交 772b76821771c53b072c2fbb95cf8876e1a65ae4
 // @author       f3liiix
