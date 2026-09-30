@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         Dokploy 简体中文汉化
 // @namespace    https://github.com/f3liiix/dokploy-zh
-// @version      0.1.22
-// @description  汉化 Dokploy v0.30.2 面板，基于官方源码提交 772b76821771c53b072c2fbb95cf8876e1a65ae4
+// @version      0.1.23
+// @description  汉化 Dokploy v0.30.8 面板，基于官方源码提交 187de463dff6e4c7258d8b11c4c56c69e872044a
 // @author       f3liiix
 // @homepageURL  https://github.com/f3liiix/dokploy-zh
 // @supportURL   https://github.com/f3liiix/dokploy-zh/issues
@@ -16447,6 +16447,283 @@
 	EXACT_TRANSLATIONS.set("Organizations", "组织");
 	EXACT_TRANSLATIONS.set("reclaimable", "可回收");
 
+	// Dokploy v0.30.3 ~ v0.30.8 新增文案
+	// Onboarding 向导
+	EXACT_TRANSLATIONS.set("Welcome", "欢迎");
+	EXACT_TRANSLATIONS.set("Pick a plan", "选择套餐");
+	EXACT_TRANSLATIONS.set("Connect server", "连接服务器");
+	EXACT_TRANSLATIONS.set("Ship something", "部署应用");
+	EXACT_TRANSLATIONS.set("You're live", "你已上线");
+	EXACT_TRANSLATIONS.set("Skip all", "全部跳过");
+	EXACT_TRANSLATIONS.set("Skip all →", "全部跳过 →");
+	EXACT_TRANSLATIONS.set("Skip onboarding?", "跳过引导？");
+	EXACT_TRANSLATIONS.set("Skip anyway", "仍然跳过");
+	EXACT_TRANSLATIONS.set("Continue setup", "继续设置");
+	EXACT_TRANSLATIONS.set("If this is your first time using Dokploy, we recommend going through these steps – it only takes a couple of minutes and gives you a feel for how projects, servers, and deployments fit together.", "如果这是你第一次使用 Dokploy，建议完成这些步骤——只需几分钟，就能了解项目、服务器和部署如何配合。");
+	EXACT_TRANSLATIONS.set("Let's get your first app", "让你的第一个应用");
+	EXACT_TRANSLATIONS.set("live", "上线");
+	EXACT_TRANSLATIONS.set(".", "。");
+	EXACT_TRANSLATIONS.set("It just takes a few steps: pick a plan, connect a server, ship something. You'll have a working URL by the end.", "只需几步：选择套餐、连接服务器、部署应用。完成后你将拥有一个可用的 URL。");
+	EXACT_TRANSLATIONS.set("Deploy from Git or Docker", "从 Git 或 Docker 部署");
+	EXACT_TRANSLATIONS.set("Push a repo, a compose file, or a container image and go live.", "推送仓库、Compose 文件或容器镜像即可上线。");
+	EXACT_TRANSLATIONS.set("One-click templates", "一键模板");
+	EXACT_TRANSLATIONS.set("WordPress, databases, and dozens of open source apps, pre-wired.", "WordPress、数据库以及数十个预配置的开源应用。");
+	EXACT_TRANSLATIONS.set("Your own servers", "你自己的服务器");
+	EXACT_TRANSLATIONS.set("Runs on infrastructure you control — no vendor lock-in.", "运行在你掌控的基础设施上——无厂商锁定。");
+	EXACT_TRANSLATIONS.set("Get started", "开始使用");
+	EXACT_TRANSLATIONS.set("Workspace", "工作区");
+	EXACT_TRANSLATIONS.set("Create your first project.", "创建你的第一个项目。");
+	EXACT_TRANSLATIONS.set("Projects group your apps, databases, and environments together.", "项目将应用、数据库和环境组织在一起。");
+	EXACT_TRANSLATIONS.set("My First Project", "我的第一个项目");
+	EXACT_TRANSLATIONS.set("What is this project for?", "这个项目是用来做什么的？");
+	EXACT_TRANSLATIONS.set("Create project", "创建项目");
+	EXACT_TRANSLATIONS.set("Project created", "项目已创建");
+	EXACT_TRANSLATIONS.set("Error creating the project", "创建项目出错");
+	EXACT_TRANSLATIONS.set("Infrastructure", "基础设施");
+	EXACT_TRANSLATIONS.set("Connect a server.", "连接一台服务器。");
+	EXACT_TRANSLATIONS.set("Dokploy deploys to servers you own. Buy one from any VPS provider (Hetzner, DigitalOcean, Hostinger...) and paste its IP below.", "Dokploy 会部署到你自己的服务器。从任意 VPS 提供商（Hetzner、DigitalOcean、Hostinger……）购买一台，然后在下方粘贴它的 IP。");
+	EXACT_TRANSLATIONS.set("To ensure a smooth experience with Dokploy, your server should have at least 1GB of RAM and 30GB of disk space.", "为确保 Dokploy 流畅运行，你的服务器至少需要 1GB 内存和 30GB 磁盘空间。");
+	EXACT_TRANSLATIONS.set("You'll need a plan or trial before connecting a server — go back to the \"Pick a plan\" step.", "连接服务器前需要先有套餐或试用——请返回“选择套餐”步骤。");
+	EXACT_TRANSLATIONS.set("1. Run this on your server to authorize Dokploy", "1. 在你的服务器上运行此命令以授权 Dokploy");
+	EXACT_TRANSLATIONS.set("Generating...", "生成中...");
+	EXACT_TRANSLATIONS.set("My First Server", "我的第一台服务器");
+	EXACT_TRANSLATIONS.set("Server name", "服务器名称");
+	EXACT_TRANSLATIONS.set("2. IP address", "2. IP 地址");
+	EXACT_TRANSLATIONS.set("IP address is required", "IP 地址为必填项");
+	EXACT_TRANSLATIONS.set("IP address cannot contain spaces", "IP 地址不能包含空格");
+	EXACT_TRANSLATIONS.set("Setting up your server – installing Docker and dependencies…", "正在设置服务器——安装 Docker 及依赖…");
+	EXACT_TRANSLATIONS.set("Checking your server...", "正在检查服务器...");
+	EXACT_TRANSLATIONS.set("Docker installed", "Docker 已安装");
+	EXACT_TRANSLATIONS.set("Dokploy network created", "Dokploy 网络已创建");
+	EXACT_TRANSLATIONS.set("Setup runs after the server boots and this page checks for it automatically. You can retry setup, or use \"Skip for now\" above to continue and come back to this later.", "服务器启动后会自动执行设置，此页面会自动检查进度。你可以重试设置，或使用上方的“暂时跳过”继续，稍后再回来完成。");
+	EXACT_TRANSLATIONS.set("Retry setup", "重试设置");
+	EXACT_TRANSLATIONS.set("Check now", "立即检查");
+	EXACT_TRANSLATIONS.set("Used during onboarding", "用于引导流程");
+	EXACT_TRANSLATIONS.set("Still generating your SSH key, try again in a moment", "仍在生成 SSH 密钥，请稍后再试");
+	EXACT_TRANSLATIONS.set("Setup is taking too long — check the server is reachable, then try again.", "设置耗时过长——请确认服务器可达后重试。");
+	EXACT_TRANSLATIONS.set("Error setting up the server", "设置服务器出错");
+	EXACT_TRANSLATIONS.set("First deploy", "首次部署");
+	EXACT_TRANSLATIONS.set("Deploy something.", "部署一个应用。");
+	EXACT_TRANSLATIONS.set("You'll need a project and a connected server before deploying — you can do that anytime from the dashboard.", "部署前需要先创建项目并连接服务器——你可以随时在控制台完成。");
+	EXACT_TRANSLATIONS.set("You'll need a project before deploying — you can do that anytime from the dashboard.", "部署前需要先创建项目——你可以随时在控制台完成。");
+	EXACT_TRANSLATIONS.set("Ship something.", "来部署一个应用吧。");
+	EXACT_TRANSLATIONS.set("Pick a quickstart — we'll generate a domain and deploy it for you.", "选择一个快速开始项——我们会为其生成域名并完成部署。");
+	EXACT_TRANSLATIONS.set("Simple app", "简单应用");
+	EXACT_TRANSLATIONS.set("A \"Hello World\" demo app, live in seconds.", "一个“Hello World”演示应用，几秒即可上线。");
+	EXACT_TRANSLATIONS.set("Starting...", "正在启动...");
+	EXACT_TRANSLATIONS.set("Deploy now →", "立即部署 →");
+	EXACT_TRANSLATIONS.set("Docker Compose template", "Docker Compose 模板");
+	EXACT_TRANSLATIONS.set("Popular open source stacks, one click away.", "热门开源技术栈，一键部署。");
+	EXACT_TRANSLATIONS.set("Live", "已上线");
+	EXACT_TRANSLATIONS.set("Deploy failed", "部署失败");
+	EXACT_TRANSLATIONS.set("Deploying", "部署中");
+	EXACT_TRANSLATIONS.set("It's live.", "已上线。");
+	EXACT_TRANSLATIONS.set("Something went wrong.", "出了点问题。");
+	EXACT_TRANSLATIONS.set("Building your app...", "正在构建应用...");
+	EXACT_TRANSLATIONS.set("Your app is up and reachable at:", "你的应用已上线，访问地址：");
+	EXACT_TRANSLATIONS.set("The deployment failed — you can check the logs from the dashboard later.", "部署失败——你可以稍后在控制台查看日志。");
+	EXACT_TRANSLATIONS.set("This usually takes a minute or two the first time.", "首次部署通常需要一两分钟。");
+	EXACT_TRANSLATIONS.set("Reachable now", "当前可达");
+	EXACT_TRANSLATIONS.set("Waiting for the build to finish...", "正在等待构建完成...");
+	EXACT_TRANSLATIONS.set("Error deploying the app", "部署应用出错");
+	EXACT_TRANSLATIONS.set("Error deploying the template", "部署模板出错");
+	EXACT_TRANSLATIONS.set("You're all set.", "一切就绪。");
+	EXACT_TRANSLATIONS.set("This is just the beginning — here's some of what else you can do.", "这只是开始——你还可以做以下这些事。");
+	EXACT_TRANSLATIONS.set("Custom domains", "自定义域名");
+	EXACT_TRANSLATIONS.set("Team collaboration", "团队协作");
+	EXACT_TRANSLATIONS.set("Postgres, MySQL, MongoDB, Redis and more, one click away.", "Postgres、MySQL、MongoDB、Redis 等，一键部署。");
+	EXACT_TRANSLATIONS.set("Attach your own domains and get automatic HTTPS.", "绑定你自己的域名并自动启用 HTTPS。");
+	EXACT_TRANSLATIONS.set("Auto-deploy on every push from GitHub, GitLab or Bitbucket.", "GitHub、GitLab 或 Bitbucket 每次推送都会自动部署。");
+	EXACT_TRANSLATIONS.set("Invite teammates with fine-grained permissions.", "以细粒度权限邀请团队成员。");
+	EXACT_TRANSLATIONS.set("Go to my project", "前往我的项目");
+	EXACT_TRANSLATIONS.set("Read the docs", "阅读文档");
+	EXACT_TRANSLATIONS.set("Welcome to Dokploy Cloud", "欢迎使用 Dokploy Cloud");
+	EXACT_TRANSLATIONS.set("Thanks for subscribing — you're all set up. Next, connect a server so you can start deploying.", "感谢订阅——一切已就绪。接下来连接一台服务器即可开始部署。");
+	EXACT_TRANSLATIONS.set("Your server is connected — here's some of what you can do next.", "服务器已连接——接下来你可以做这些事。");
+	EXACT_TRANSLATIONS.set("Go to dashboard", "前往控制台");
+	EXACT_TRANSLATIONS.set("Need help? Join our Discord →", "需要帮助？加入我们的 Discord →");
+
+	// 套餐与计费
+	EXACT_TRANSLATIONS.set("Start free, upgrade when ready.", "免费开始，随时升级。");
+	EXACT_TRANSLATIONS.set("Try any plan free for 7 days. No credit card required — add one only if you decide to stay.", "任意套餐可免费试用 7 天。无需信用卡——决定继续使用后再添加即可。");
+	EXACT_TRANSLATIONS.set("Setup 1 server", "部署 1 台服务器");
+	EXACT_TRANSLATIONS.set("Setup 1 Server", "部署 1 台服务器");
+	EXACT_TRANSLATIONS.set("Setup up to 3 Servers", "最多部署 3 台服务器");
+	EXACT_TRANSLATIONS.set("Unlimited apps & databases", "无限应用与数据库");
+	EXACT_TRANSLATIONS.set("Community support", "社区支持");
+	EXACT_TRANSLATIONS.set("Unlimited users & environments", "无限用户与环境");
+	EXACT_TRANSLATIONS.set("Basic RBAC + 2FA", "基础 RBAC + 2FA");
+	EXACT_TRANSLATIONS.set("Email & chat support", "邮件与在线支持");
+	EXACT_TRANSLATIONS.set("For individual developers", "适合个人开发者");
+	EXACT_TRANSLATIONS.set("For small to mid-size teams", "适合中小型团队");
+	EXACT_TRANSLATIONS.set("Start 7-day free trial", "开始 7 天免费试用");
+	EXACT_TRANSLATIONS.set("Subscribe now", "立即订阅");
+	EXACT_TRANSLATIONS.set("Your 7-day trial has started", "你的 7 天免费试用已开始");
+	EXACT_TRANSLATIONS.set("Error starting checkout", "启动结账出错");
+	EXACT_TRANSLATIONS.set("Error starting trial", "开始试用出错");
+	EXACT_TRANSLATIONS.set("Error switching plan", "切换套餐出错");
+	EXACT_TRANSLATIONS.set("Free trial", "免费试用");
+	EXACT_TRANSLATIONS.set("Current plan", "当前套餐");
+	EXACT_TRANSLATIONS.set("Trial", "试用");
+	EXACT_TRANSLATIONS.set("Switch to Hobby", "切换到 Hobby");
+	EXACT_TRANSLATIONS.set("Switch to Startup", "切换到 Startup");
+	EXACT_TRANSLATIONS.set("Add payment method", "添加支付方式");
+	EXACT_TRANSLATIONS.set("You're subscribed and billed automatically.", "你已订阅，将自动计费。");
+	EXACT_TRANSLATIONS.set("7-day free trial on any plan", "任意套餐可享 7 天免费试用");
+	EXACT_TRANSLATIONS.set("No credit card required — pick Hobby or Startup below.", "无需信用卡——在下方选择 Hobby 或 Startup。");
+	EXACT_TRANSLATIONS.set("You're on the legacy plan. Switch to Hobby or Startup (same benefits). You can also choose annual billing (20% off). Stripe will prorate the change.", "你正在使用旧版套餐。可切换到 Hobby 或 Startup（权益相同），也可以选择按年计费（优惠 20%）。Stripe 将按比例折算差价。");
+	EXACT_TRANSLATIONS.set("Your free trial ends today. Add a payment method to keep your servers.", "你的免费试用今天到期。添加支付方式以保留服务器。");
+	EXACT_TRANSLATIONS.set("/mo", "/月");
+	EXACT_TRANSLATIONS.set("mo", "月");
+	EXACT_TRANSLATIONS.set("yr", "年");
+	EXACT_TRANSLATIONS.set("monthly", "按月");
+	EXACT_TRANSLATIONS.set("annual", "按年");
+	EXACT_TRANSLATIONS.set("billing).", "计费）。");
+	EXACT_TRANSLATIONS.set("(", "（");
+	EXACT_TRANSLATIONS.set(")", "）");
+	EXACT_TRANSLATIONS.set("of", "/");
+	EXACT_TRANSLATIONS.set("and", "和");
+	EXACT_TRANSLATIONS.set("or", "或");
+	EXACT_TRANSLATIONS.set("Unlimited Deployments", "无限部署次数");
+	EXACT_TRANSLATIONS.set("Unlimited Databases", "无限数据库");
+	EXACT_TRANSLATIONS.set("Unlimited Applications", "无限应用");
+	EXACT_TRANSLATIONS.set("1 Organization", "1 个组织");
+	EXACT_TRANSLATIONS.set("1 User", "1 名用户");
+	EXACT_TRANSLATIONS.set("2 Environments", "2 个环境");
+	EXACT_TRANSLATIONS.set("1 Volume Backup per Application", "每个应用 1 个卷备份");
+	EXACT_TRANSLATIONS.set("1 Backup per Database", "每个数据库 1 个备份");
+	EXACT_TRANSLATIONS.set("1 Scheduled Job per Application", "每个应用 1 个定时任务");
+	EXACT_TRANSLATIONS.set("Community Support (Discord)", "社区支持（Discord）");
+	EXACT_TRANSLATIONS.set("3 Organizations", "3 个组织");
+	EXACT_TRANSLATIONS.set("Unlimited Users", "无限用户");
+	EXACT_TRANSLATIONS.set("Unlimited Environments", "无限环境");
+	EXACT_TRANSLATIONS.set("Unlimited Volume Backups", "无限卷备份");
+	EXACT_TRANSLATIONS.set("Unlimited Database Backups", "无限数据库备份");
+	EXACT_TRANSLATIONS.set("Unlimited Scheduled Jobs", "无限定时任务");
+	EXACT_TRANSLATIONS.set("Basic RBAC (Admin, Developer)", "基础 RBAC（管理员、开发者）");
+	EXACT_TRANSLATIONS.set("Email and Chat Support", "邮件与在线支持");
+	EXACT_TRANSLATIONS.set("Up to Unlimited Servers", "服务器数量不限");
+	EXACT_TRANSLATIONS.set("Up to Unlimited Organizations", "组织数量不限");
+	EXACT_TRANSLATIONS.set("Fine-grained RBAC", "细粒度 RBAC");
+	EXACT_TRANSLATIONS.set("Complete Hosting Flexibility", "完整的托管灵活性");
+	EXACT_TRANSLATIONS.set("SSO / SAML (Azure, OKTA, etc)", "SSO / SAML（Azure、OKTA 等）");
+	EXACT_TRANSLATIONS.set("White Labeling", "白标定制");
+	EXACT_TRANSLATIONS.set("Priority Support and Services", "优先支持与服务");
+
+	// DNS 提供商与记录管理
+	EXACT_TRANSLATIONS.set("API Endpoint", "API 端点");
+	EXACT_TRANSLATIONS.set("Select an endpoint", "选择端点");
+	EXACT_TRANSLATIONS.set("Application Key", "应用密钥");
+	EXACT_TRANSLATIONS.set("Consumer Key", "消费者密钥");
+	EXACT_TRANSLATIONS.set("Secret API Key", "私有 API 密钥");
+	EXACT_TRANSLATIONS.set("Edit provider", "编辑提供商");
+	EXACT_TRANSLATIONS.set("OVHcloud Europe", "OVHcloud 欧洲");
+	EXACT_TRANSLATIONS.set("OVHcloud Canada", "OVHcloud 加拿大");
+	EXACT_TRANSLATIONS.set("OVHcloud US", "OVHcloud 美国");
+	EXACT_TRANSLATIONS.set("Kimsufi Europe", "Kimsufi 欧洲");
+	EXACT_TRANSLATIONS.set("Kimsufi Canada", "Kimsufi 加拿大");
+	EXACT_TRANSLATIONS.set("So you Start Europe", "So you Start 欧洲");
+	EXACT_TRANSLATIONS.set("So you Start Canada", "So you Start 加拿大");
+	EXACT_TRANSLATIONS.set("Create API keys at porkbun.com/account/api and make sure API access is enabled for the domains you want Dokploy to manage.", "在 porkbun.com/account/api 创建 API 密钥，并确保为希望 Dokploy 管理的域名启用了 API 访问。");
+	EXACT_TRANSLATIONS.set("Create a token at manager.infomaniak.com with the", "在 manager.infomaniak.com 创建具有以下范围的令牌：");
+	EXACT_TRANSLATIONS.set("scopes.", "。");
+	EXACT_TRANSLATIONS.set("Create the three keys at once on api.ovh.com/createToken, with exactly these five rights:", "在 api.ovh.com/createToken 一次性创建三个密钥，并恰好授予以下五项权限：");
+	EXACT_TRANSLATIONS.set("The first one lists your zones and has to be granted on its own: OVH matches rights per exact path, so", "第一项用于列出你的区域，必须单独授予：OVH 按精确路径匹配权限，因此");
+	EXACT_TRANSLATIONS.set("does not cover it.", "并不涵盖它。");
+	EXACT_TRANSLATIONS.set("No DNS providers connected", "未连接 DNS 提供商");
+	EXACT_TRANSLATIONS.set("Add Cloudflare or Route53 credentials to manage domain records without leaving Dokploy.", "添加 Cloudflare 或 Route53 凭据，无需离开 Dokploy 即可管理域名记录。");
+	EXACT_TRANSLATIONS.set("View domains", "查看域名");
+	EXACT_TRANSLATIONS.set("Delete provider", "删除提供商");
+	EXACT_TRANSLATIONS.set("Back to DNS providers", "返回 DNS 提供商");
+	EXACT_TRANSLATIONS.set("Back to domains", "返回域名");
+	EXACT_TRANSLATIONS.set("DNS records", "DNS 记录");
+	EXACT_TRANSLATIONS.set("Records managed through", "记录由");
+	EXACT_TRANSLATIONS.set("this provider", "此提供商");
+	EXACT_TRANSLATIONS.set(". Changes are written straight to the provider.", "管理。更改会直接写入提供商。");
+	EXACT_TRANSLATIONS.set("No records in this zone", "此区域暂无记录");
+	EXACT_TRANSLATIONS.set("Add an A or CNAME record to point this domain at one of your servers.", "添加 A 或 CNAME 记录，将此域名指向你的服务器。");
+	EXACT_TRANSLATIONS.set("Filter records...", "筛选记录...");
+	EXACT_TRANSLATIONS.set("No records match your filters.", "没有符合筛选条件的记录。");
+	EXACT_TRANSLATIONS.set("Domains this provider's credentials can manage. Open one to see and edit its DNS records.", "此提供商凭据可管理的域名。打开一个即可查看并编辑其 DNS 记录。");
+	EXACT_TRANSLATIONS.set("No domains found", "未找到域名");
+	EXACT_TRANSLATIONS.set("These credentials can't reach any zone. Check that the token has access to at least one domain.", "这些凭据无法访问任何区域。请确认令牌至少有权限访问一个域名。");
+	EXACT_TRANSLATIONS.set("Records unavailable", "记录不可用");
+	EXACT_TRANSLATIONS.set("No records", "无记录");
+	EXACT_TRANSLATIONS.set("Delete record", "删除记录");
+	EXACT_TRANSLATIONS.set("Edit record", "编辑记录");
+	EXACT_TRANSLATIONS.set("New record", "新建记录");
+	EXACT_TRANSLATIONS.set("Close panel", "关闭面板");
+	EXACT_TRANSLATIONS.set("IPv4 address", "IPv4 地址");
+	EXACT_TRANSLATIONS.set("IPv6 address", "IPv6 地址");
+	EXACT_TRANSLATIONS.set("Mail server", "邮件服务器");
+	EXACT_TRANSLATIONS.set("Nameserver", "域名服务器");
+	EXACT_TRANSLATIONS.set("Start with the priority, then the mail server.", "先写优先级，然后是邮件服务器。");
+	EXACT_TRANSLATIONS.set("Priority, weight, port, then target.", "依次为优先级、权重、端口和目标。");
+	EXACT_TRANSLATIONS.set("Flags, tag, then the quoted value.", "依次为标志、标签和带引号的值。");
+	EXACT_TRANSLATIONS.set("One value per line: every line belongs to the same record set.", "每行一个值：每行都属于同一记录集。");
+	EXACT_TRANSLATIONS.set("Proxy status", "代理状态");
+	EXACT_TRANSLATIONS.set("DNS only", "仅 DNS");
+	EXACT_TRANSLATIONS.set("Proxied", "已代理");
+	EXACT_TRANSLATIONS.set("Traffic runs through Cloudflare and the origin IP stays hidden.", "流量经过 Cloudflare，源站 IP 保持隐藏。");
+	EXACT_TRANSLATIONS.set("Cloudflare only answers the DNS query; traffic reaches the origin directly.", "Cloudflare 仅应答 DNS 查询，流量直达源站。");
+	EXACT_TRANSLATIONS.set("Proxied records always use automatic TTL.", "代理记录始终使用自动 TTL。");
+	EXACT_TRANSLATIONS.set("Proxy", "代理");
+
+	// Vault 提供商与密钥导入
+	EXACT_TRANSLATIONS.set("App ID", "应用 ID");
+	EXACT_TRANSLATIONS.set("App ID is required", "应用 ID 为必填项");
+	EXACT_TRANSLATIONS.set("Service Account REST API Token", "服务账户 REST API 令牌");
+	EXACT_TRANSLATIONS.set("Service Account REST API token is required", "服务账户 REST API 令牌为必填项");
+	EXACT_TRANSLATIONS.set("Parameter discovery path must start with /", "参数发现路径必须以 / 开头");
+	EXACT_TRANSLATIONS.set("Enter a valid URL (e.g. https://api.phase.dev)", "请输入有效的 URL（例如 https://api.phase.dev）");
+	EXACT_TRANSLATIONS.set("Discovery path (optional)", "发现路径（可选）");
+	EXACT_TRANSLATIONS.set("Limits parameter browsing and autocomplete to this hierarchy. IAM permissions remain the security boundary.", "将参数浏览与自动补全限制在此层级内。IAM 权限仍是安全边界。");
+	EXACT_TRANSLATIONS.set("Use the REST API token from a Service Account — not the CLI/SDK", "使用服务账户的 REST API 令牌——而非 CLI/SDK 的");
+	EXACT_TRANSLATIONS.set("token. The Phase App must have Server-side Encryption (SSE) enabled.", "令牌。Phase 应用必须启用服务端加密（SSE）。");
+	EXACT_TRANSLATIONS.set("Self-hosted Phase defaults to", "自托管 Phase 默认为");
+	EXACT_TRANSLATIONS.set("Clear all", "全部清除");
+	EXACT_TRANSLATIONS.set("Access all", "全部授权");
+	EXACT_TRANSLATIONS.set(". SecureString parameters are decrypted automatically. Resolution requires", "。SecureString 参数会自动解密。解析需要");
+	EXACT_TRANSLATIONS.set(". Discovery requires", "。发现需要");
+	EXACT_TRANSLATIONS.set(". Customer-managed KMS keys also require", "。客户管理的 KMS 密钥还需要");
+	EXACT_TRANSLATIONS.set(". Secrets are fetched at deploy time and never stored in Dokploy.", "。密钥在部署时获取，不会存储在 Dokploy 中。");
+	EXACT_TRANSLATIONS.set("Import from Vault", "从 Vault 导入");
+	EXACT_TRANSLATIONS.set("Import secrets from vault", "从 Vault 导入密钥");
+	EXACT_TRANSLATIONS.set("Vault provider", "Vault 提供商");
+	EXACT_TRANSLATIONS.set("Loading secrets...", "正在加载密钥...");
+	EXACT_TRANSLATIONS.set("No secrets found for this provider.", "未找到此提供商的密钥。");
+	EXACT_TRANSLATIONS.set("Select all", "全选");
+	EXACT_TRANSLATIONS.set("selected", "项已选择");
+	EXACT_TRANSLATIONS.set("already exists", "已存在");
+	EXACT_TRANSLATIONS.set("Select the secrets to import as", "选择要作为");
+	EXACT_TRANSLATIONS.set("references. Secrets already defined below are skipped unless you check them explicitly.", " 引用导入的密钥。已在下方定义的密钥会被跳过，除非你明确勾选。");
+
+	// 服务器删除确认
+	EXACT_TRANSLATIONS.set("No services are associated with this server. You can delete it safely.", "此服务器没有关联的服务，可以安全删除。");
+	EXACT_TRANSLATIONS.set("This server has", "此服务器关联了");
+	EXACT_TRANSLATIONS.set("associated. Delete them before removing the server.", "个服务。请先删除这些服务，再删除服务器。");
+
+	// 其他新增界面文案
+	EXACT_TRANSLATIONS.set("Loading requests...", "正在加载请求...");
+	EXACT_TRANSLATIONS.set("Error updating network", "更新网络出错");
+	EXACT_TRANSLATIONS.set("Manage external secret managers (HashiCorp Vault, AWS, Azure, Infisical, Doppler, Scaleway, Phase) and where their secrets can be referenced", "管理外部密钥管理器（HashiCorp Vault、AWS、Azure、Infisical、Doppler、Scaleway、Phase）及其密钥可被引用的位置");
+	EXACT_TRANSLATIONS.set("Open an SSH root shell on remote servers", "在远程服务器上打开 SSH root shell");
+	EXACT_TRANSLATIONS.set("Deploy with Fresh Volumes", "使用全新卷部署");
+	EXACT_TRANSLATIONS.set("Fresh Volumes", "全新卷");
+	EXACT_TRANSLATIONS.set("Deploy with fresh volumes (removes all persistent data)", "使用全新卷部署（移除所有持久化数据）");
+	EXACT_TRANSLATIONS.set("This will remove all volumes and redeploy with a clean state. All persistent data will be permanently deleted.", "这将移除所有卷并以全新状态重新部署。所有持久化数据将被永久删除。");
+	EXACT_TRANSLATIONS.set("Compose deployed with fresh volumes", "Compose 已使用全新卷部署");
+	EXACT_TRANSLATIONS.set("Drag & drop a logo or click to upload", "拖放 Logo 或点击上传");
+	EXACT_TRANSLATIONS.set("Logo preview", "Logo 预览");
+	EXACT_TRANSLATIONS.set("Uploaded image", "已上传图片");
+	EXACT_TRANSLATIONS.set("Error processing SVG", "处理 SVG 出错");
+	EXACT_TRANSLATIONS.set("Error processing image", "处理图片出错");
+	EXACT_TRANSLATIONS.set("Only JPG, JPEG, PNG, WEBP, and SVG files are allowed", "仅允许 JPG、JPEG、PNG、WEBP 和 SVG 文件");
+	EXACT_TRANSLATIONS.set("OG Image URL", "OG 图片 URL");
+	EXACT_TRANSLATIONS.set("Open Graph image used for link previews on social media and messaging platforms. Recommended size: 1200x630px.", "用于社交媒体和消息平台链接预览的 Open Graph 图片。推荐尺寸：1200x630px。");
+	EXACT_TRANSLATIONS.set("Links", "链接");
+	EXACT_TRANSLATIONS.set("Customize the footer text and sidebar links.", "自定义页脚文本和侧边栏链接。");
+
 
 	const DYNAMIC_TEMPLATES = [
 	[
@@ -16956,6 +17233,26 @@
 ];
 	DYNAMIC_TEMPLATES.push(
 		["Force logout for ${} ${} (${})?", "确定要强制让 ${} ${}（${}）退出登录吗？"],
+		["Setup up to ${} servers", "最多部署 ${} 台服务器"],
+		["Switching to ${}...", "正在切换到 ${}..."],
+		["Your trial is now on the ${} plan", "你的试用已切换至 ${} 套餐"],
+		["View domains for ${}", "查看 ${} 的域名"],
+		["Expected ${}", "格式应为 ${}"],
+		["${} record", "${} 条记录"],
+		["${} records", "${} 条记录"],
+		["Network \"${}\" updated from Docker", "已从 Docker 更新网络“${}”"],
+		["This will permanently delete \"${}\" and all associated data.", "这将永久删除“${}”及所有相关数据。"],
+		["This will permanently delete \"${}\" and all its associated data.", "这将永久删除“${}”及其所有相关数据。"],
+		["You have ${} days left in your free trial. Add a payment method to keep your servers.", "你的免费试用还剩 ${} 天。添加支付方式以保留服务器。"],
+		["You have ${} day left in your free trial. Add a payment method to keep your servers.", "你的免费试用还剩 ${} 天。添加支付方式以保留服务器。"],
+		["${} days left · ends ${} · billing starts automatically", "免费试用还剩 ${} 天 · ${} 到期 · 到期后自动开始计费"],
+		["${} day left · ends ${} · billing starts automatically", "免费试用还剩 ${} 天 · ${} 到期 · 到期后自动开始计费"],
+		["${} days left · ends ${} · add a card to keep your servers", "免费试用还剩 ${} 天 · ${} 到期 · 添加银行卡以保留服务器"],
+		["${} day left · ends ${} · add a card to keep your servers", "免费试用还剩 ${} 天 · ${} 到期 · 添加银行卡以保留服务器"],
+		["${} days left · billing starts automatically", "免费试用还剩 ${} 天 · 到期后自动开始计费"],
+		["${} day left · billing starts automatically", "免费试用还剩 ${} 天 · 到期后自动开始计费"],
+		["${} days left · add a card to keep your servers", "免费试用还剩 ${} 天 · 添加银行卡以保留服务器"],
+		["${} day left · add a card to keep your servers", "免费试用还剩 ${} 天 · 添加银行卡以保留服务器"],
 	);
 
 	const TOKEN = "$" + "{}";
@@ -17248,10 +17545,16 @@
 	function translateResourceCount(value) {
 		if (value === "environment" || value === "environments") return "个环境";
 		if (value === "service" || value === "services") return "个服务";
+		if (value === "server" || value === "servers") return "台服务器";
+		if (value === "secret" || value === "secrets") return "个密钥";
 		let match = value.match(/^(\d+)\s+environments?$/i);
 		if (match) return `${match[1]} 个环境`;
 		match = value.match(/^(\d+)\s+services?$/i);
 		if (match) return `${match[1]} 个服务`;
+		match = value.match(/^(\d+)\s+servers?$/i);
+		if (match) return `${match[1]} 台服务器`;
+		match = value.match(/^(\d+)\s+secrets?$/i);
+		if (match) return `${match[1]} 个密钥`;
 		match = value.match(/^(.+?)\s+environment$/i);
 		if (match) {
 			const environmentNames = {
@@ -17267,6 +17570,8 @@
 		}
 		match = value.match(/^(.+?)\s+service$/i);
 		if (match) return `${match[1]} 服务`;
+		match = value.match(/^(.+?)\s+server$/i);
+		if (match) return `${match[1]} 服务器`;
 		return null;
 	}
 
@@ -17379,7 +17684,7 @@
 	function collapsePluralSuffix(node) {
 		if (compact(node.nodeValue || "") !== "s") return false;
 		const previous = nearestSiblingText(node, "previousSibling");
-		if (!/(?:个服务|个环境)$/u.test(previous)) return false;
+		if (!/(?:个服务|个环境|台服务器|个密钥)$/u.test(previous)) return false;
 		trackTextNode(node);
 		markSelfMutation(node);
 		node.nodeValue = "";
@@ -17389,7 +17694,7 @@
 	function collapseRedundantTotal(node) {
 		if (compact(node.nodeValue || "") !== "total") return false;
 		const previous = nearestSiblingText(node, "previousSibling");
-		if (!/(?:个服务|个环境)$/u.test(previous)) return false;
+		if (!/(?:个服务|个环境|台服务器|个密钥)$/u.test(previous)) return false;
 		trackTextNode(node);
 		markSelfMutation(node);
 		node.nodeValue = "";
@@ -17398,7 +17703,7 @@
 
 	function trackAdjacentPluralSuffix(node) {
 		const value = compact(node.nodeValue || "");
-		if (!/(?:个服务|个环境)$/u.test(value)) return;
+		if (!/(?:个服务|个环境|台服务器|个密钥)$/u.test(value)) return;
 		let sibling = node.nextSibling;
 		while (sibling) {
 			if (sibling.nodeType === Node.COMMENT_NODE) {

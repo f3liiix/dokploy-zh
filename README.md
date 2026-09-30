@@ -2,7 +2,7 @@
 
 通过 Tampermonkey 在浏览器端汉化 Dokploy 管理面板，不修改 Dokploy 服务端文件。
 
-当前脚本基于 Dokploy `v0.30.2` 制作。
+当前脚本基于 Dokploy `v0.30.8` 制作。
 
 ## 安装
 
